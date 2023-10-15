@@ -1,0 +1,91 @@
+html {
+    scroll-behavior: smooth;
+}
+::selection {
+    background-color: #367cff;
+    color: white;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background-color: #fcfcfc;
+    border-radius: 40px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #367cff;
+    border-radius: 40px;
+    height: 10px;
+}
+.cont {
+    max-width: 1200px;
+    margin: auto;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.heading {
+    position: relative;
+    color: #367cff;
+    text-transform: uppercase;
+    width: fit-content;
+    margin: 20px auto;
+    font-size: 40px;
+}
+.heading::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 50%;
+    background-color: #367cff;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+.advice {
+    padding: 80px 0;
+    background-color: #efefef;
+}
+.advice .cont {
+    padding: 50px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.advice .cont img {
+    width: 550px;
+}
+.advice .cont .form {
+    width: 550px;
+}
+.advice .cont .form input {
+    width: 100%;
+    border: 1pxx solid #ddd;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.advice .cont .form textarea {
+    height: 100px;
+    width: 100%;
+}
+.advice .cont .form button {
+    border: none;
+    background-color: #367cff;
+    color: white;
+    padding: 10px;
+    float: right;
+    cursor: pointer;
+}
+
